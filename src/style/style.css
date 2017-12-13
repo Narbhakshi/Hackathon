@@ -559,7 +559,7 @@ border: 10px, solid;
   text-align: center;
 padding-top: 100px;
 background-color: aliceblue;
-height: 1000px;
+height: 600px;
 }
 
 
@@ -598,6 +598,10 @@ position: relative; height: 392px;
   height: 100%;
   background-color: #ef916f;
   position: absolute; left: 49.06%; top: 0px;
+}
+.placeHolder{
+  height: 200px;
+  background-color: #d7d7f347;
 }
 
 .errorPage {

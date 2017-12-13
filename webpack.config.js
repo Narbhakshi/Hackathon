@@ -26,7 +26,7 @@ module.exports = {
   },
   devServer: {
     inline:true,
-    port: 8008
+    port: 51713
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),

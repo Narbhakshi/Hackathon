@@ -9,6 +9,7 @@ import ErrorPage from "./components/otherPages/ErrorPage";
 import Layout from "./components/Layout";
 import LoginPage from "./components/landingPage/LoginPage";
 import TestChartPage from "./components/charts/TestChartPage";
+import TestPage from "./components/otherPages/TestPage";
 
 
 const app = document.getElementById('app');
@@ -23,6 +24,7 @@ ReactDOM.render(
     <Route path="dashboard" name="dashboard" component={Dashboard}></Route>
     <Route path="testChartPage" name="testChartPage" component={TestChartPage}></Route>
     <Route path="errorPage" name="errorPage" component={ErrorPage}></Route>
+    <Route path="TestPage" name="testPage" component={TestPage}></Route>
   </Router>
 
 
