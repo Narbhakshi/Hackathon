@@ -581,7 +581,19 @@ position: relative; height: 392px;
   background-color: #ffa2e4;
   position: absolute; left: 24.9606%; top: 0px;
 }
+.testChart{
+  width: 25%;
+  height: 100%;
+  background-color: #ffa2e4;
+  position: absolute; left: 24.9606%; top: 0px;
+}
 .footer3{
+  width: 50%;
+  height: 100%;
+  background-color: #ef916f;
+  position: absolute; left: 49.06%; top: 0px;
+}
+.testChartPage{
   width: 50%;
   height: 100%;
   background-color: #ef916f;
