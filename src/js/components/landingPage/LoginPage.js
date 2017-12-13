@@ -12,6 +12,7 @@ export default class LoginPage extends React.Component {
 
   constructor(){
     super();
+    window.sessionStorage.clear();
     this.state={
       demoClass:"demo",
       userName:null,
@@ -90,9 +91,11 @@ displayResult(data, textStatus, request){
     const loginForm = document.getElementById('demo');
     this.setState({demoClass:"demo ripple"});
     setTimeout(() =>{
+      window.sessionStorage.setItem("loginDetails", JSON.stringify(data));
       this.props.history.push("/dashboard");
     }, 700);
   }else{
+    this.props.history.push("/errorPage");
     console.log("LOGIN FAILED");
   }
 
@@ -111,26 +114,26 @@ displayResult(data, textStatus, request){
       <div class={this.state.demoClass}>
         <div class="login">
           <div class="login__check"></div>
-          <div class="login__form">
+          <form class="login__form" action="javascript:void(0);">
             <div class="login__row">
               <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
                 <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
               </svg>
               <input type="text" class="login__input name" name="loginPageUserName"
-              onBlur={this.setUserName.bind(this)}id="loginPageUserName" placeholder="Username" required/>
+              onChange={this.setUserName.bind(this)}id="loginPageUserName" placeholder="Username" required/>
             </div>
             <div class="login__row">
               <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
                 <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
               </svg>
               <input type="password" class="login__input pass" name="loginPagePassword"
-              onBlur={this.setPassword.bind(this)} placeholder="Password" id="loginPagePassword" required/>
+              onChange={this.setPassword.bind(this)} placeholder="Password" id="loginPagePassword" required/>
             </div>
             <button type="submit" class={this.state.submitButtonClass} id="loginButton"
             onClick={this.signIn.bind(this)}>Sign in</button>
             <p class="login__signup">Dont have an account? &nbsp;
             <a onClick={this.signUp.bind(this)} href="#">Sign up</a></p>
-          </div>
+          </form>
         </div>
       </div>
       </div>

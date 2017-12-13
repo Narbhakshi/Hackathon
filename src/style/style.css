@@ -599,3 +599,13 @@ position: relative; height: 392px;
   background-color: #ef916f;
   position: absolute; left: 49.06%; top: 0px;
 }
+
+.errorPage {
+    margin-left: 250px;
+    padding-left: 250px;
+}
+
+.oopsText{
+  font-size: 60px;
+    font-weight: 700;
+}

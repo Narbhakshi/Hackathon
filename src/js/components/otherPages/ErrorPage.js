@@ -10,10 +10,10 @@ export default class ErrorPage extends React.Component {
 
   render() {
     return (
-      <div class="page-container page-container-responsive">
+      <div class="page-container errorPage page-container-responsive">
         <div class="row space-top-8 space-8 row-table">
             <div class="col-5 col-middle">
-              <h1 class="text-jumbo text-ginormous">Oops!</h1>
+              <h1 class="oopsText">Oops!</h1>
               <h2>We can't seem to find the page you're looking for.</h2>
               <h6>Error code: 404</h6>
               <ul class="list-unstyled">

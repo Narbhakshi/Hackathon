@@ -22,7 +22,7 @@ export default class TestChartPage extends React.Component {
   render() {
     return (
       <div class="testChartPageContainer">
-        <ImplChart  type="bar" animationEnabled="true" titleText="Fortune Global 500 Companies by National" dataPoints={this.state.dataPoints}/>
+        <ImplChart  type="doughnut" animationEnabled="true" titleText="Fortune Global 500 Companies bysdsd National" dataPoints={this.state.dataPoints}/>
       </div>
 
 
