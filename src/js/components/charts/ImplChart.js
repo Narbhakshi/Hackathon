@@ -16,8 +16,8 @@ export default class ImplChart extends React.Component {
       const chartDataDynamic = {
                 title:{
                     text:this.props.titleText,
-                    fontFamily: "Impact",
-                    fontWeight: "normal"
+                    fontFamily:this.props.fontFamily,
+                    fontWeight:this.props.fontWeight
                 },
                 legend:{
                       verticalAlign: "bottom",
