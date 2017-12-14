@@ -6,6 +6,7 @@ import FadeContent from "./FadeContent";
 import FadeContentFooter from "./FadeContentFooter";
 import Header from "../Header";
 import WelcomeSection from "./WelcomeSection";
+import DevDashboard from "./DevDashboard";
 
 
 export default class Dashboard extends React.Component {
@@ -25,12 +26,9 @@ export default class Dashboard extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
-          <div class="wrapper">
+        <div class="wrapper">
             <div class="content">
-              <WelcomeSection/>
-              <FadeContent/>
-              <FadeContentFooter/>
+              <DevDashboard/>
             </div>
           </div>
       </div>

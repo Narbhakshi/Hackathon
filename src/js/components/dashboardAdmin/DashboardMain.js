@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "../Header";
+import MainSection from "./MainSection";
 
 export default class DashboardAdmin extends React.Component {
 
@@ -19,10 +20,9 @@ export default class DashboardAdmin extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
-          <div class="wrapper">
-            <div class="content">
-              <h1>Hello Admin</h1>
+            <div class="wrapper">
+                <div class="content">
+              <MainSection/>
             </div>
           </div>
       </div>

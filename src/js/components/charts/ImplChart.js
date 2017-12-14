@@ -15,10 +15,22 @@ export default class ImplChart extends React.Component {
   componentDidMount() {
       const chartDataDynamic = {
                 title:{
-                    text:this.props.titleText
+                    text:this.props.titleText,
+                    fontFamily: "Impact",
+                    fontWeight: "normal"
                 },
+                legend:{
+                      verticalAlign: "bottom",
+                      horizontalAlign: "center"
+                    },
                 animationEnabled: this.props.animationEnabled,
                 data: [{
+                    indexLabelFontSize: 20,
+                    indexLabelFontFamily: "Garamond",
+                    indexLabelFontColor: "darkgrey",
+                    indexLabelLineColor: "darkgrey",
+                    indexLabelPlacement: "outside",
+                    showInLegend: true,
                     type: this.props.type,
                     dataPoints: this.props.dataPoints
                 }]

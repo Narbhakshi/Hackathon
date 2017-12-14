@@ -18,7 +18,7 @@ export default class LoginPage extends React.Component {
       userName:null,
       userPassword: null,
       submitButtonClass:"login__submit",
-      loginFormUrl: "http://localhost:8080/backend.server/myresource/loginForm",
+      loginFormUrl: "http://mdadils02.corp.amdocs.com:8080/backend.server/myresource/loginForm",
       loginData:"",
       loading:false,
     };
@@ -92,7 +92,11 @@ displayResult(data, textStatus, request){
     this.setState({demoClass:"demo ripple"});
     setTimeout(() =>{
       window.sessionStorage.setItem("loginDetails", JSON.stringify(data));
-      this.props.history.push("/dashboard");
+      if(data.comp[3] === "M") {
+        this.props.history.push("/dashboardAdmin");
+      } else {
+        this.props.history.push("/dashboard");
+      }      
     }, 700);
   }else{
     this.props.history.push("/errorPage");

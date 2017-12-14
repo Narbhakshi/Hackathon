@@ -613,3 +613,216 @@ position: relative; height: 392px;
   font-size: 60px;
     font-weight: 700;
 }
+
+/* USER PROFILE PAGE */
+ .card {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 130px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+.modal-header-success {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: lightskyblue;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-warning {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: orange;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-primary {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #112299;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background: #f7f7f4;
+}
+.text-center{
+    text-align: center;
+    margin: 1.25rem 0;
+    border-bottom: 1px solid #dadada;
+    padding: 1.25rem 0;
+}
+.radio label input {
+    font-size: 100%;
+}
+.radio-choices {
+    font-size: 18px;
+}
+input[type='radio'] {
+    width: auto;
+    height: 1.4em;
+}
+.radio-choices .radio:nth-of-type(even) {
+    background: #effafa;
+}
+.radio-choices .radio-left {
+    margin-right: 0;
+    padding-right: 0;
+}
+.radio-choices .radio-right {
+    margin-left: 0;
+    padding-left: 0;
+}
+/* media queries specific to alignment of forms 
+   not using form-group Bootstrap to save space
+   so we compensate - some phones looked odd so
+   check before deployment
+ */
+@media screen and (max-width: 540px) {
+    .radio {
+        margin-left: 1rem;
+        font-size: 1.25rem;
+    }
+    .radio-choices .radio-left {
+        float: left;
+        margin-left: -10px;
+        padding-left: 0;
+    }
+    .radio-choices .radio-right {
+        float: right;
+        margin-right: -10px;
+        padding-right: 0;
+    }
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-yellow {
+  background-color: gold;
+}
+
+.color-red {
+  color: red;
+}
+.color-orange {
+  color: orange;
+}
+.color-yellow {
+  color: yellow;
+}
+.color-green {
+  color: green;
+}
+.modal-dialog {
+  min-width: 460px !important;
+  width: 80% !important;
+}
+.btn-default.dropdown-toggle {
+  min-width: -webkit-fill-available;
+  background-color: lightskyblue;
+}
+
+.btn-primary:hover {
+  background-color: lightskyblue !important ;
+}
+.bg-Critical {
+  background-color: red;
+}
+
+.bg-High {
+  background-color: gold;
+}
+
